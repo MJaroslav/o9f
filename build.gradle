@@ -146,7 +146,9 @@ tasks.withType(Jar)*.doFirst {
         if (buildprop.coremod.toBoolean())
             manifest {
                 // Don't forged about -Dfml.coreMods.load
-                attributes "FMLCorePlugin": "${project.group}.${project.name.replace(" ", "").toLowerCase()}.asm.${project.name.replace(" ", "")}Plugin"
+                def modName = project.name.replace(" ", "")
+                modName = modName.substring(0, 1).toUpperCase() + modName.substring(1)
+                attributes "FMLCorePlugin": "${project.group}.${modName.toLowerCase()}.asm.${modName}Plugin"
                 attributes "FMLCorePluginContainsFMLMod": "true"
             }
         from outRefMapFile
