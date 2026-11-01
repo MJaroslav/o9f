@@ -7,4 +7,4 @@ tar xfz /home/jitpack/tools/jdk16/jdk16.tar.gz --strip-components=1 -C /home/jit
 rm -rf /home/jitpack/tools/jdk8/
 mkdir /home/jitpack/tools/jdk8/
 wget -nv https://github.com/adoptium/temurin8-binaries/releases/download/jdk8u504-b01/OpenJDK8U-jdk_x64_linux_hotspot_8u504b01.tar.gz -O /home/jitpack/tools/jdk8/jdk8.tar.gz
-tar xfz /home/jitpack/tools/jdk8/jdk16.tar.gz --strip-components=1 -C /home/jitpack/tools/jdk8
+tar xfz /home/jitpack/tools/jdk8/jdk8.tar.gz --strip-components=1 -C /home/jitpack/tools/jdk8
