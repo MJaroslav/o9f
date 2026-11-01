@@ -1,6 +1,6 @@
-package io.github.mjaroslav.o9f;
+package com.github.mjaroslav.o9f;
 
-import io.github.mjaroslav.o9f.lib.Reference;
+import com.github.mjaroslav.o9f.lib.Reference;
 import lombok.val;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.FontRenderer;

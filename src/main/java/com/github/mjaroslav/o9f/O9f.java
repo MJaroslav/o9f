@@ -1,10 +1,10 @@
-package io.github.mjaroslav.o9f;
+package com.github.mjaroslav.o9f;
 
+import com.github.mjaroslav.o9f.lib.Reference;
 import cpw.mods.fml.common.Mod;
 import cpw.mods.fml.common.Mod.EventHandler;
 import cpw.mods.fml.common.event.FMLInitializationEvent;
 import cpw.mods.fml.common.event.FMLPostInitializationEvent;
-import io.github.mjaroslav.o9f.lib.Reference;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.resources.IReloadableResourceManager;
 import org.jetbrains.annotations.NotNull;

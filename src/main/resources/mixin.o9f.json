@@ -3,7 +3,7 @@
   "compatibilityLevel": "JAVA_8",
   "required": true,
   "target": "@env(DEFAULT)",
-  "package": "io.github.mjaroslav.o9f.asm.mixin",
+  "package": "com.github.mjaroslav.o9f.asm.mixin",
   "refmap": "mixin.o9f.refmap.json",
   "injectors": {
     "defaultRequire": 1

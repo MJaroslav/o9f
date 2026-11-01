@@ -1,7 +1,7 @@
-package io.github.mjaroslav.o9f.asm.mixin;
+package com.github.mjaroslav.o9f.asm.mixin;
 
 
-import io.github.mjaroslav.o9f.O9f;
+import com.github.mjaroslav.o9f.O9f;
 import net.minecraft.client.gui.FontRenderer;
 import net.minecraft.client.renderer.entity.Render;
 import net.minecraft.client.renderer.entity.RenderItem;

@@ -5,6 +5,7 @@
 [![GitHub stars](https://img.shields.io/github/stars/mjaroslav/o9f)](https://github.com/mjaroslav/o9f/stargazers "GitHub stars")
 [![GitHub license](https://img.shields.io/badge/license-LGPL--3.0--only-green)](https://github.com/MJaroslav/o9f/blob/master/LICENSE "Open license")
 [![JitPack](https://jitpack.io/v/MJaroslav/o9f.svg)](https://jitpack.io/#MJaroslav/o9f "JitPack")
+[![](https://jitci.com/gh/MJaroslav/o9f/svg)](https://jitci.com/gh/MJaroslav/o9f)
 
 # o9f / work in progress
 

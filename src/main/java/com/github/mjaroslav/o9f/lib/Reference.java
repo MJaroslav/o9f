@@ -1,4 +1,4 @@
-package io.github.mjaroslav.o9f.lib;
+package com.github.mjaroslav.o9f.lib;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
