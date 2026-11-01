@@ -1,0 +1,12 @@
+[
+{
+  "modid": "o9f",
+  "name": "o9f",
+  "description": "${description}",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "https://modrinth.com/mod/o9f",
+  "authorList": ["MJaroslav"],
+  "logoFile": "assets/o9f/logo.png"
+}
+]

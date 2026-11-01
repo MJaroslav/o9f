@@ -134,7 +134,7 @@ processResources {
     from(sourceSets.main.resources.srcDirs) {
         include 'mcmod.info'
         expand 'version': project.version, 'mcversion': project.minecraft.version,
-                'description': buildprop.description
+                'description': buildprop.description.replace("\"", "\\\"")
         duplicatesStrategy = DuplicatesStrategy.INCLUDE
     }
 }
