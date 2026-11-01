@@ -171,6 +171,7 @@ publishing {
                 name = rootProject.name
                 description = buildprop.description.toString()
             }
+            artifact devJar
         }
     }
     repositories {
