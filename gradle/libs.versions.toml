@@ -1,0 +1,20 @@
+[versions]
+unimixins = "0.3.2"
+
+[libraries]
+# Compile and development libraries
+annotation = { module = "org.jetbrains:annotations", version = "26.1.0" }
+lombok = { module = "org.projectlombok:lombok", version = "1.18.48" }
+jabel = { module = "com.github.bsideup.jabel:jabel-javac-plugin", version = "1.0.0" }
+unimixins = { module = "com.github.LegacyModdingMC.UniMixins:unimixins-mixin-1.7.10", version.ref = "unimixins" }
+unimixinsMixinBooterLegacy = { module = "com.github.LegacyModdingMC.UniMixins:unimixins-mixinbooterlegacy-1.7.10", version.ref = "unimixins" }
+# Utility mods
+codeChickenCore = { module = "com.github.GTNewHorizons:CodeChickenCore", version = "1.4.22" }
+notEnoughItems = { module = "com.github.GTNewHorizons:NotEnoughItems", version = "2.8.171-GTNH" }
+waila = { module = "curse.maven:waila-73488", version = "2230518" }
+# Compatability mods
+appliedEnergistics2 = { module = "curse.maven:applied-energistics-2-223794", version = "2296430" }
+extraCells2 = { module = "curse.maven:extracells2-229218", version = "2308206" }
+jabba = { module = "curse.maven:jabba-73510", version = "2302355-sources-2302356" }
+baubles = { module = "curse.maven:baubles-227083", version = "2224857" }
+thaumcraft = { module = "curse.maven:thaumcraft-223628", version = "2227552" }
