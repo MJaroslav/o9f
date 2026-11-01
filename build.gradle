@@ -166,11 +166,14 @@ reobf {
 publishing {
     publications {
         create("mavenJava", MavenPublication) {
-            from components.java
+            artifactId = rootProject.name
+            groupId = rootProject.group
+            version = rootProject.version
             pom {
-                name = rootProject.name
                 description = buildprop.description.toString()
             }
+            artifact jar
+            artifact sourcesJar
             artifact devJar
         }
     }
