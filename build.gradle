@@ -165,15 +165,19 @@ reobf {
 
 publishing {
     publications {
-        mavenJava(MavenPublication) {
+        create("mavenJava", MavenPublication) {
             from components.java
-            // artifact(jar) { builtBy build }
-            // artifact(sourcesJar) { builtBy sourcesJar }
-            artifact(devJar) { builtBy devJar }
             pom {
                 name = rootProject.name
-                description = buildprop.description
+                description = buildprop.description.toString()
             }
+        }
+    }
+    repositories {
+        maven {
+            name = "JitCI" // JitCI internal repository with fallback
+            def deployDir = "DEPLOY_DIR"
+            url = System.getenv(deployDir) == null ? layout.buildDirectory.dir("deploy") : System.getenv(deployDir)
         }
     }
 }
