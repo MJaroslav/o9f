@@ -43,6 +43,7 @@ public class ConfirurableFontRenderer extends FontRenderer {
         val italicOffset = italic ? 1F : 0F;
         bindTexture(locationFontTexture);
         val w = (float) glyph.w;
+        val posY = this.posY + glyph.shift;
         GL11.glBegin(GL11.GL_TRIANGLE_STRIP);
         GL11.glTexCoord2f(u / size, v / size);
         GL11.glVertex3f(posX + italicOffset, posY, 0.0F);
@@ -88,7 +89,7 @@ public class ConfirurableFontRenderer extends FontRenderer {
     }
 
     public static class Glyph {
-        public int u, v, w;
+        public int u, v, w, shift;
     }
 }
 

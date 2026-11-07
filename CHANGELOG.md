@@ -7,7 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [1.0.0]
+
 ### Added
 
 - Custom font for ItemStack sizes in GUI slots.
 - Custom font can be extended or replaced by resource pack. 
+
+[unreleased]: https://github.com/MJaroslav/Bon2Gradle/compare/1.0.0...HEAD
+[1.0.0]: https://github.com/MJaroslav/Bon2Gradle/releases/tag/1.0.0

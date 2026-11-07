@@ -14,7 +14,7 @@ buildscript {
         classpath('com.anatawa12.forge:ForgeGradle:1.2-1.1.+') {
             changing = true
         }
-        classpath 'com.github.MJaroslav:Bon2Gradle:0.5.+'
+        classpath 'com.github.MJaroslav:Bon2Gradle:0.6.+'
     }
 }
 
@@ -75,20 +75,20 @@ dependencies {
     annotationProcessor libs.lombok
     implementation libs.unimixins
     annotationProcessor libs.unimixins
-    implementation bon2.deobf(libs.unimixinsMixinBooterLegacy.get())
+    implementation bon2.deobf(libs.unimixinsMixinBooterLegacy)
     annotationProcessor libs.jabel
 
     // Mods utility
     implementation variantOf(libs.codeChickenCore) { classifier("dev") }
     implementation variantOf(libs.notEnoughItems) { classifier("dev") }
-    implementation bon2.deobf(libs.waila.get())
+    implementation bon2.deobf(libs.waila)
 
     // Mods compatability
-    implementation bon2.deobf(libs.appliedEnergistics2.get())
-    implementation bon2.deobf(libs.extraCells2.get())
+    implementation bon2.deobf(libs.appliedEnergistics2)
+    implementation bon2.deobf(libs.extraCells2)
     implementation libs.jabba
-    implementation bon2.deobf(libs.baubles.get())
-    implementation bon2.deobf(libs.thaumcraft.get())
+    implementation bon2.deobf(libs.baubles)
+    implementation bon2.deobf(libs.thaumcraft)
 }
 
 configure([tasks.compileJava, tasks.compileTestJava, tasks.compileApiJava]) {
