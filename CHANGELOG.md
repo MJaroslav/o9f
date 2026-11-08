@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Font json file charset on read.
+
 ## [1.0.1] - 2026-11-07
 
 ### Fixed

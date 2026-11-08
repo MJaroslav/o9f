@@ -11,6 +11,7 @@ import org.jetbrains.annotations.NotNull;
 import org.lwjgl.opengl.GL11;
 
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.util.Map;
 
 public class ConfirurableFontRenderer extends FontRenderer {
@@ -73,7 +74,7 @@ public class ConfirurableFontRenderer extends FontRenderer {
     protected void loadFontData() {
         try {
             val stream = Minecraft.getMinecraft().getResourceManager().getResource(locationFontData).getInputStream();
-            val content = IOUtils.toString(stream);
+            val content = IOUtils.toString(stream, StandardCharsets.UTF_8);
             data = Reference.GSON.fromJson(content, FontData.class);
         } catch (IOException e) {
             throw new RuntimeException(e);
